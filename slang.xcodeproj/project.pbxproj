@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		350CA8002918424500B07608 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA7FF2918424500B07608 /* main.c */; };
+		350CA8092918455600B07608 /* bytecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA8082918455500B07608 /* bytecode.c */; };
+		350CA80C2918465300B07608 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA80B2918465300B07608 /* memory.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,10 @@
 		350CA7FC2918424400B07608 /* slang */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = slang; sourceTree = BUILT_PRODUCTS_DIR; };
 		350CA7FF2918424500B07608 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		350CA806291842FA00B07608 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		350CA8072918436600B07608 /* bytecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bytecode.h; sourceTree = "<group>"; };
+		350CA8082918455500B07608 /* bytecode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bytecode.c; sourceTree = "<group>"; };
+		350CA80A2918465300B07608 /* memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		350CA80B2918465300B07608 /* memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 			children = (
 				350CA7FF2918424500B07608 /* main.c */,
 				350CA806291842FA00B07608 /* common.h */,
+				350CA8072918436600B07608 /* bytecode.h */,
+				350CA8082918455500B07608 /* bytecode.c */,
+				350CA80A2918465300B07608 /* memory.h */,
+				350CA80B2918465300B07608 /* memory.c */,
 			);
 			path = slang;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350CA8092918455600B07608 /* bytecode.c in Sources */,
+				350CA80C2918465300B07608 /* memory.c in Sources */,
 				350CA8002918424500B07608 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
