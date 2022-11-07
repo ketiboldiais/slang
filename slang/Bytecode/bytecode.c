@@ -13,10 +13,12 @@ void initBytecode(Bytecode* bytecode) {
   bytecode->count = 0;
   bytecode->capacity = 0;
   bytecode->code = NULL;
+  initValueArray(&bytecode->constants);
 }
 
 void freeBytecode(Bytecode* bytecode) {
   FREE_ARRAY(uint8_t, bytecode->code, bytecode->capacity);
+  freeValueArray(&bytecode->constants);
   initBytecode(bytecode);
 }
 
@@ -28,4 +30,9 @@ void writeBytecode(Bytecode* bytecode, uint8_t byte) {
   }
   bytecode->code[bytecode->count] = byte;
   bytecode->count++;
+}
+
+int addConstant(Bytecode* bytecode, Value value) {
+  writeValueArray(&bytecode->constants, value);
+  return bytecode->constants.count - 1;
 }

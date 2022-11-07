@@ -11,6 +11,7 @@
 		350CA8092918455600B07608 /* bytecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA8082918455500B07608 /* bytecode.c */; };
 		350CA80C2918465300B07608 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA80B2918465300B07608 /* memory.c */; };
 		350CA80F29195CD500B07608 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA80E29195CD500B07608 /* debug.c */; };
+		350CA8162919605500B07608 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA8152919605500B07608 /* value.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		350CA80B2918465300B07608 /* memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
 		350CA80D29195CD500B07608 /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		350CA80E29195CD500B07608 /* debug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		350CA8142919605500B07608 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		350CA8152919605500B07608 /* value.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +71,49 @@
 			isa = PBXGroup;
 			children = (
 				350CA7FF2918424500B07608 /* main.c */,
+				350CA8172919605E00B07608 /* Literals */,
+				350CA81129195FC200B07608 /* Debugger */,
+				350CA806291842FA00B07608 /* common.h */,
+				350CA8122919600400B07608 /* Bytecode */,
+				350CA8132919602000B07608 /* Memory */,
+			);
+			path = slang;
+			sourceTree = "<group>";
+		};
+		350CA81129195FC200B07608 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
 				350CA80D29195CD500B07608 /* debug.h */,
 				350CA80E29195CD500B07608 /* debug.c */,
-				350CA806291842FA00B07608 /* common.h */,
+			);
+			path = Debugger;
+			sourceTree = "<group>";
+		};
+		350CA8122919600400B07608 /* Bytecode */ = {
+			isa = PBXGroup;
+			children = (
 				350CA8072918436600B07608 /* bytecode.h */,
 				350CA8082918455500B07608 /* bytecode.c */,
+			);
+			path = Bytecode;
+			sourceTree = "<group>";
+		};
+		350CA8132919602000B07608 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
 				350CA80A2918465300B07608 /* memory.h */,
 				350CA80B2918465300B07608 /* memory.c */,
 			);
-			path = slang;
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		350CA8172919605E00B07608 /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				350CA8142919605500B07608 /* value.h */,
+				350CA8152919605500B07608 /* value.c */,
+			);
+			path = Literals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350CA8162919605500B07608 /* value.c in Sources */,
 				350CA8092918455600B07608 /* bytecode.c in Sources */,
 				350CA80C2918465300B07608 /* memory.c in Sources */,
 				350CA8002918424500B07608 /* main.c in Sources */,
