@@ -3,6 +3,7 @@
 
 ### Xcode ###
 ## User settings
+*xcworkspace/xcuserdata/*
 xcuserdata/
 
 ## Xcode 8 and earlier
