@@ -57,7 +57,6 @@
 		350CA7F32918424400B07608 = {
 			isa = PBXGroup;
 			children = (
-				350CA81B291B0BE700B07608 /* Virtual_Machine */,
 				350CA7FE2918424400B07608 /* slang */,
 				350CA7FD2918424400B07608 /* Products */,
 			);
@@ -74,6 +73,7 @@
 		350CA7FE2918424400B07608 /* slang */ = {
 			isa = PBXGroup;
 			children = (
+				350CA81B291B0BE700B07608 /* Virtual_Machine */,
 				350CA7FF2918424500B07608 /* main.c */,
 				350CA8172919605E00B07608 /* Literals */,
 				350CA81129195FC200B07608 /* Debugger */,
