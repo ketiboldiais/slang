@@ -12,6 +12,7 @@
 		350CA80C2918465300B07608 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA80B2918465300B07608 /* memory.c */; };
 		350CA80F29195CD500B07608 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA80E29195CD500B07608 /* debug.c */; };
 		350CA8162919605500B07608 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA8152919605500B07608 /* value.c */; };
+		350CA81A291B0BDE00B07608 /* VirtualMachine.c in Sources */ = {isa = PBXBuildFile; fileRef = 350CA819291B0BDD00B07608 /* VirtualMachine.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		350CA80E29195CD500B07608 /* debug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		350CA8142919605500B07608 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
 		350CA8152919605500B07608 /* value.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
+		350CA818291B0BDD00B07608 /* VirtualMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualMachine.h; sourceTree = "<group>"; };
+		350CA819291B0BDD00B07608 /* VirtualMachine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VirtualMachine.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 		350CA7F32918424400B07608 = {
 			isa = PBXGroup;
 			children = (
+				350CA81B291B0BE700B07608 /* Virtual_Machine */,
 				350CA7FE2918424400B07608 /* slang */,
 				350CA7FD2918424400B07608 /* Products */,
 			);
@@ -116,6 +120,15 @@
 			path = Literals;
 			sourceTree = "<group>";
 		};
+		350CA81B291B0BE700B07608 /* Virtual_Machine */ = {
+			isa = PBXGroup;
+			children = (
+				350CA818291B0BDD00B07608 /* VirtualMachine.h */,
+				350CA819291B0BDD00B07608 /* VirtualMachine.c */,
+			);
+			path = Virtual_Machine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				350CA8162919605500B07608 /* value.c in Sources */,
+				350CA81A291B0BDE00B07608 /* VirtualMachine.c in Sources */,
 				350CA8092918455600B07608 /* bytecode.c in Sources */,
 				350CA80C2918465300B07608 /* memory.c in Sources */,
 				350CA8002918424500B07608 /* main.c in Sources */,

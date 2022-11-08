@@ -13,9 +13,9 @@ int main(int argc, const char * argv[]) {
   Bytecode bytecode;
   initBytecode(&bytecode);
   int constant = addConstant(&bytecode, 1.2);
-  writeBytecode(&bytecode, OP_CONSTANT);
-  writeBytecode(&bytecode, constant);
-  writeBytecode(&bytecode, OP_RETURN);
+  writeBytecode(&bytecode, OP_CONSTANT, 123);
+  writeBytecode(&bytecode, constant, 123);
+  writeBytecode(&bytecode, OP_RETURN, 123);
   disassembleBytecode(&bytecode, "test bytecode");
   freeBytecode(&bytecode);
   return 0;

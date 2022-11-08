@@ -12,4 +12,6 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#define DEBUGGER_TRACE_EXECUTION
+
 #endif /* common_h */

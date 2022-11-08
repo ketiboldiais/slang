@@ -30,6 +30,11 @@ static int simpleInstruction(const char* name, int offset) {
 
 int disassembleInstruction(Bytecode* bytecode, int offset) {
   printf("%04d ", offset);
+  if (offset > 0 && bytecode->lines[offset] == bytecode->lines[offset-1]) {
+    printf("    | ");
+  } else {
+    printf("%4d ", bytecode->lines[offset]);
+  }
   uint8_t instruction = bytecode->code[offset];
   switch (instruction) {
     case OP_CONSTANT:

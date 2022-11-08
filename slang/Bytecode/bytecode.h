@@ -20,12 +20,13 @@ typedef struct {
   int count;
   int capacity;
   uint8_t* code;
+  int* lines;
   ValueArray constants;
 } Bytecode;
 
 void initBytecode(Bytecode* bytecode);
 void freeBytecode(Bytecode* bytecode);
-void writeBytecode(Bytecode* bytecode, uint8_t byte);
+void writeBytecode(Bytecode* bytecode, uint8_t byte, int line);
 int addConstant(Bytecode* bytecode, Value value);
 
 #endif /* bytecode_h */
